@@ -1,0 +1,39 @@
+# Backend Stage 2 project
+
+# Introduction
+- This is a RESTful API purely written in Django. It is robust for CRUD as it is meant to be.
+## Prerequisite
+- It would be nice to have
+    1. VSCode (Code Editor) __required__
+    2. Python installed locally __required__
+    4. REST Cleint (VSCode extension) or
+    5. Basic CURL knowledge
+    6. Internet connection
+
+### Getting started
+-To start the API on your local machine, make sure your'e in the root directory, run the following commands
+1. pip install -r requirements.txt
+2. python manage.py runserver
+3. URL will be generated.
+
+__STAY IN THE ROOT__
+
+### Testing
+
+- `Using REST Client`
+- Select `test.rest`
+- This file contain some test you can run manually.
+
+- `Using CURL`
+- Open Command Prompt
+1. Create new Person
+    > `curl http://127.0.0.1:8000/api -X POST -H "Content-Type: application/json" -d "{\"name\" : \" New Person\" }"`
+2. Get Person
+    > `curl http://127.0.0.1:8000/api/8`
+3. Update person
+    > `curl http://127.0.0.1:8000/api/8 -X PATCH -H "Content-Type: application/json" -d "{\"name\" : \" New Person -update\" }"`
+4. Delete Person
+    > `curl -X DELETE http://127.0.0.1:8000/api/8`
+
+
+

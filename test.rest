@@ -1,0 +1,33 @@
+
+
+//Get Person 
+GET http://127.0.0.1:8000/api/5
+
+###
+//Add new Person
+POST http://127.0.0.1:8000/api
+Content-Type: application/json
+
+{ "name": "Marfo New 7"}
+
+###
+//Update
+PATCH http://127.0.0.1:8000/api/5
+Content-Type: application/json
+
+{ 
+    "name": "Marfo New 5 updat" 
+}
+
+###
+
+// Delete a person
+DELETE http://127.0.0.1:8000/api/4
+
+
+###
+
+
+
+
+
